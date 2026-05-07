@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovation Watch installeren</title>
+  <link rel="manifest" href="manifest.json?v=20260507-2">
+  <link rel="icon" href="iw-icon-512.png?v=20260507-2" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260507-2">
+  <meta name="apple-mobile-web-app-title" content="Innovation Watch">
+  <meta name="theme-color" content="#0f766e">
+  <style>
+    body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; font-family:Arial,sans-serif; background:#fff; color:#062b2b; }
+    main { width:min(92vw,440px); text-align:center; padding:24px; }
+    img { width:150px; height:150px; object-fit:contain; }
+    h1 { margin:18px 0 8px; font-size:26px; }
+    p { line-height:1.45; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="iw-icon-512.png?v=20260507-2" alt="Innovation Watch">
+    <h1>Innovation Watch</h1>
+    <p>Installeer deze pagina op het beginscherm. Het icoon opent daarna automatisch het juiste Innovation Watch-formulier.</p>
+  </main>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js?v=20260507-2');
+    }
+  </script>
+</body>
+</html>
